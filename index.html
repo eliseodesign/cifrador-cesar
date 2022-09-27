@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador | Eliseo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1 data-tooltip="create by Eliseo Arévalo" data-flow="top">Cifrador Cesar</h1>
+        
+            <!-- <input type="text" id="mensaje" placeholder="Escriba su mensaje"> -->
+        <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
+        
+        <h3>desplazamiento:</h3>
+            <input type="number" id="desplazamiento" size="4" value="3" placeholder="Escriba el desplazamiento">
+        <!-- ---------------  -->
+
+        <div class="buttons">
+
+            <button type="button" id="cifrar">CIFRAR</button>
+        <!-- ---------------------  -->
+            <button type="button" id="descifrar">DESCIFRAR</button>
+      
+
+        </div>
+        
+
+      
+        <!-- <p><input type="text" id="mensaje2"></p> -->
+
+        <textarea rows="3" readonly="readonly" id="mensaje2" placeholder="RESULTADO"></textarea>
+
+    </main>
+
+
+
+
+    <!--!-------- MODAL ----------->
+    
+    <!-- <div class="bg__vacio" id="bg">
+
+    </div> -->
+
+    <div class="modal" id="modal">
+        <div class="contain__modal">
+            <img src="cesar.png" alt="Cesar" class="modal__img">
+
+            <div class="modal__text">
+                <p class="text__m">Se dice que <strong data-tooltip="EMPERADOR ROMANO" data-flow="top">Julio Cesar</strong> usaba este cifrado para
+                    comunicarse con sus guardias</p>
+                <p class="text__m">Escribe un texto para cifrarlo o para decifrarlo, recuerda que puedes elegir el
+                    numero de movimientos de letras</p>
+                <p class="text__m m--">(Este cifrador no inluye la letra " ñ ")</p>
+            </div>
+
+            <p class="button__m" id="btn-modal">Continuar</p>
+
+
+        </div>
+
+
+        <script src="main.js"></script>
+        <script src="modal.js"></script>
+</body>
+
+</html>

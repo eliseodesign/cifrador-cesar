@@ -1,0 +1,11 @@
+/* QUITAR MODAL  */
+
+.quitar {
+    /* display:none ; */
+    transform: translateY(-300vh);
+    /* display: none; */
+    opacity: 0;
+    transition:transform, width, height, 1.5s ease-in-out;
+
+}
+

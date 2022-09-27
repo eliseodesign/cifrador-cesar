@@ -2,7 +2,7 @@
 
 ### Caesar-cipher <br>
 
-![Cifrador Cesar Img](./img/cifrador%20cesar.png)
+![Cifrador Cesar Img](./img/cifrador.png)
 
 ## Descripción
 

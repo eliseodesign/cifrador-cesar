@@ -121,3 +121,11 @@
 [data-tooltip=""]::before {
     display: none !important;
 }
+
+
+
+
+
+#mensaje, #mensaje2{
+    font-size: 1.5em;
+}

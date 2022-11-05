@@ -46,6 +46,7 @@ span {
     color: #fff;
     border-radius: var(--borde-redondo);
     padding: 10px;
+    font-size: 1.5em;
     
     
     
@@ -135,7 +136,7 @@ button:hover{
 }
 
 #mensaje #mensaje2{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 /*  M O D A L ---------------------------  */
 /* -----------------------------------------------  */
@@ -195,14 +196,14 @@ button:hover{
 
 .text__m {
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-shadow: 5px 5px 10px #000;
 }
 .m--{
     font-weight: 100;
     opacity: .5;
     padding-top: 10px;
-    font-size: 1em;
+    font-size: 1.5em;
     color:#5af77c;
 }
 

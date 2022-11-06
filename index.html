@@ -6,31 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cifrador | Eliseo</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/quitar.css">
     <link rel="stylesheet" href="./css/tooltip.css">
 </head>
 
 <body>
+    <header>
+        <img src="./img/casco.svg" alt="">
+        <div class="header__text">
+            <h1 data-tooltip="create by Eliseo Arévalo" data-flow="right">Cifrador Cesar</h1>
+            <p>Encripta tus mensajes y desencriptalos con este cifrador cesar</p>
+        </div>
+    </header>
 
     <main>
-        <h1 data-tooltip="create by Eliseo Arévalo" data-flow="top">Cifrador Cesar</h1>
-        
-            <!-- <input type="text" id="mensaje" placeholder="Escriba su mensaje"> -->
-        <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
-        
-        <h3>desplazamiento:</h3>
-            <input type="number" id="desplazamiento" size="4" value="3" placeholder="Escriba el desplazamiento">
-        <!-- ---------------  -->
 
+        <div class="controls">
+            <div class="number">
+                <p>3</p>
+            </div>
+            <div class="range">
+                <p>Desplazamiento</p>
+                <input id="desplazamiento" type="range">
+            </div>
+        </div>
+        
         <div class="buttons">
 
-            <button type="button" id="cifrar">CIFRAR</button>
+            <button type="button" id="cifrar">Cifrar Mensaje</button>
         <!-- ---------------------  -->
-            <button type="button" id="descifrar">DESCIFRAR</button>
+            <button type="button" id="descifrar">Descifrar mensaje</button>
       
 
         </div>
+            <!-- <input type="text" id="mensaje" placeholder="Escriba su mensaje"> -->
+        <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
+        
+        <!-- <h3>desplazamiento:</h3>
+            <input type="number" id="desplazamiento" size="4" value="3" placeholder="Escriba el desplazamiento"> -->
+        <!-- ---------------  -->
+
         
 
       

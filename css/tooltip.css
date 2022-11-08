@@ -132,7 +132,9 @@
     color: #000;
 }
 
+
 #mensaje2{
+ 
     color: rgb(129, 100, 19);
 }
 @media screen and (min-width:720px){
@@ -140,4 +142,5 @@
     #mensaje2 {
         font-size: 1.3em;
     }
+
 }

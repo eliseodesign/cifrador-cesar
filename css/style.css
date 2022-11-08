@@ -364,6 +364,8 @@ strong {
 
 @media screen and (max-width:720px) {
     main {
+        /* display: flex; */
+        grid-template-columns: 1fr;
         display: flex;
         flex-direction: column
     }

@@ -21,6 +21,9 @@ function inicio(){
 
 
 function cifrar(texto, desplazamiento){
+
+    eliminar_value() // eliminamos el value en el input de mensaje
+
     let resultado = "";
     const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -44,6 +47,7 @@ function cifrar(texto, desplazamiento){
 }
 
 function cifrar2 (texto,desplazamiento){
+    eliminar_value()
     if(!texto)
         return "";
     
@@ -55,6 +59,7 @@ function cifrar2 (texto,desplazamiento){
 }
 
 function descifrar (texto,desplazamiento){
+    eliminar_value()
     if(!texto)
         return "";
     
@@ -67,3 +72,45 @@ function descifrar (texto,desplazamiento){
 
 
 
+
+
+let m = document.getElementById("mensaje")
+function eliminar_value(){
+    
+    time = 90
+    if(m.value.length > 6) time = 40
+    if(m.value.length > 30) time = 8
+    if(m.value.length > 50) time = 5
+
+
+
+        setTimeout(()=>{
+        if(m.value == "") return 
+    
+        m.value = m.value.slice(0,-1)
+
+  
+
+    },time)
+}
+
+
+
+
+
+
+
+
+
+///////////////////////////
+// setear output de input range 
+
+let desplazamiento = document.getElementById("desplazamiento");
+
+desplazamiento.addEventListener("input", output)
+
+
+function output(){
+
+    document.getElementById("output-range").innerText = desplazamiento.value
+}

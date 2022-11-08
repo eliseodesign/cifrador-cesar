@@ -75,10 +75,11 @@ function descifrar (texto,desplazamiento){
 
 
 let m = document.getElementById("mensaje")
+
 function eliminar_value(){
     
     time = 90
-    if(m.value.length > 6) time = 40
+    if(m.value.length > 6) time = 30
     if(m.value.length > 30) time = 8
     if(m.value.length > 50) time = 5
 
@@ -88,10 +89,10 @@ function eliminar_value(){
         if(m.value == "") return 
     
         m.value = m.value.slice(0,-1)
-
-  
+        eliminar_value()
 
     },time)
+  
 }
 
 

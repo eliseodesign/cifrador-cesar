@@ -18,8 +18,6 @@ function inicio(){
 }
 
 
-
-
 function cifrar(texto, desplazamiento){
 
     eliminar_value() // eliminamos el value en el input de mensaje
